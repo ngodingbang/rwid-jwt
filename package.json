@@ -1,0 +1,49 @@
+{
+  "name": "rwid-jwt",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Learn to build an Node.js backend application using Express.js with JWT authentication.",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "^18.17.1",
+    "npm": "^9.6.7"
+  },
+  "volta": {
+    "node": "18.17.1",
+    "npm": "9.6.7"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint --ext .js, .",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier --check \"**/*.+(js|json)\"",
+    "prettier:fix": "npx prettier --write \"**/*.+(js|json)\"",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngodingbang/rwid-jwt.git"
+  },
+  "author": "Septianata Rizky Pratama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngodingbang/rwid-jwt/issues"
+  },
+  "homepage": "https://github.com/ngodingbang/rwid-jwt#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
